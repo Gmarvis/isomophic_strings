@@ -2,6 +2,11 @@ let wordOne = document.getElementById("word-one");
 let wordTwo = document.getElementById("word-two");
 const btn = document.getElementById("btn");
 
+btn.addEventListener("click", (event) => {
+  event.preventDefault();
+  isIsomophic();
+});
+
 const isIsomophic = (s, t) => {
   s = wordOne.value;
   t = wordTwo.value;
@@ -35,8 +40,3 @@ const isIsomophic = (s, t) => {
   document.getElementById("status").style.color = "green";
   return;
 };
-
-btn.addEventListener("click", (event) => {
-  event.preventDefault();
-  isIsomophic();
-});
