@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Isomophic string</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <h2>Isomophic strings</h2>
+
+        <p class="details">
+          Two strings are isomorphic if one-to-one mapping is possible for every
+          character of the first string to every character of the second string.
+          For example, consider the two strings: “ACAB” and “XCXY”. We can map
+          the characters of the first string to the characters of the second
+          string as follows: 'A' maps to 'X' <samp></samp>
+        </p>
+        <form>
+          <label for="word-one">1st word</label>
+          <input
+            name="word-one"
+            type="text"
+            id="word-one"
+            placeholder="enter your first word"
+          />
+
+          <label for="word-two">2nd word</label>
+          <input
+            name="word-two"
+            type="text"
+            id="word-two"
+            placeholder="enter your second word"
+          />
+          <button id="btn">check</button>
+        </form>
+        <div class="status">
+          <h3>results:</h3>
+          <p id="status"></p>
+        </div>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
