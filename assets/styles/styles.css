@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4c2d2d;
+}
+
+.main-container {
+  padding-top: 40px;
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+
+.container {
+  width: 30vw;
+  padding: 2% 5px;
+  box-shadow: #63636333 0 2px 8px 0;
+  background-color: #fff;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+input {
+  height: 20px;
+  outline: none;
+  background-color: none;
+  padding: 2px;
+}
+
+button {
+  width: 100%;
+  margin: 10px 0;
+  height: 30px;
+  padding: 2px;
+  border: none;
+  background-color: #6e6c6c;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3f3e3e;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-decoration: dotted;
+}
+
+.details {
+  width: 100%;
+  margin: auto;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    width: 80vw;
+    padding: 2% 5px;
+    box-shadow: #63636333 0 2px 8px 0;
+    background-color: #fff;
+    margin: auto;
+  }
+}
